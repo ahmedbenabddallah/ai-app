@@ -7,6 +7,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpClient\HttpClient;
+
 
 class PhraseController extends AbstractController
 {
@@ -49,4 +51,6 @@ class PhraseController extends AbstractController
     {
         return stripos($content, 'bien') !== false ? 'positif' : 'neutre';
     }
+   
+
 }
