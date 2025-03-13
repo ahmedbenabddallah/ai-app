@@ -1,0 +1,13 @@
+/* Style pour le titre */
+.app-title {
+    text-align: center; /* Centrer le texte */
+    color: #e8e0f1; /* Couleur violette */
+    font-size: 2.5rem; /* Taille de police */
+    font-family: 'Arial', sans-serif; /* Police moderne */
+    margin-top: 20px; /* Espacement en haut */
+    margin-bottom: 20px; /* Espacement en bas */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre du texte pour un effet moderne */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Dégradé de couleur */
+    -webkit-background-clip: text; /* Appliquer le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Rendre le texte transparent pour voir le dégradé */
+  }

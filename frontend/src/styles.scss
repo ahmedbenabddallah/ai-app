@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #c1be07, #13a5f3);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }

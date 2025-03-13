@@ -1,0 +1,28 @@
+<div class="container">
+    <h2 class="title">Ajouter une phrase</h2>
+    <form (ngSubmit)="submitPhrase()" class="phrase-form">
+      <input type="text" [(ngModel)]="phrase" name="phrase" placeholder="Entrez une phrase" required>
+      <button type="submit" class="submit-btn">Soumettre</button>
+    </form>
+    <p *ngIf="sentiment" class="sentiment-text">Sentiment : {{ sentiment }}</p>
+  </div>
+  
+  <div class="container">
+    <h2 class="title">Liste des phrases</h2>
+    <table class="phrase-table">
+      <thead>
+        <tr>
+          <th>Phrase</th>
+          <th>Sentiment</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of phrases">
+          <td>{{ p.content }}</td>
+          <td>{{ p.sentiment }}</td>
+          <td>{{ p.createdAt | date:'d MMMM y' }}</td> 
+        </tr>
+      </tbody>
+    </table>
+  </div>
